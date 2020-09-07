@@ -28,7 +28,7 @@ class UpdateOauthTokensTable extends Migration
      */
     public function down()
     {
-        Schema::table('', function (Blueprint $table) {
+        Schema::table('oauth_tokens', function (Blueprint $table) {
             $table->dropColumn('user_id');
             $table->dropColumn('access_token');
             $table->dropColumn('expires_in');
